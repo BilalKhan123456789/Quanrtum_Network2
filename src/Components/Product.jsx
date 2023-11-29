@@ -2,11 +2,51 @@ import React from 'react'
 import doctor from "../../src/assets/doctor.jpg"
 import nursing from "../../src/assets/Nursing.jpg"
 import body from "../../src/assets/science.jpg"
+import Slider from 'react-slick';
 
 
 
 
 function Product() {
+
+  const setting={
+    dots: true,
+    arrow :false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  };
+
+
   return (
     <>
 
@@ -162,25 +202,66 @@ function Product() {
 <h1 className='md:text-4xl text-2xl'>Featured topics and communities</h1>
 
 
-<div className='w-full  cursor-pointer md:flex justify-between mt-5'>
+<div className='w-full  cursor-pointe mt-5'>
 
 
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Sustainability</p>
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Open science</p>
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Gender & Diversity</p>
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Healthcare & Medicine</p>
+
+
+<div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 p-5'>
+
+<div >
+<span>Sustainability</span>
+</div>
+
+<div>
+  <span>Open science</span>
+</div>
+
+
+<div>
+  <span>Gender & Diversity</span>
+</div>
+
+
+<div>
+  <span>Healthcare & Medicine</span>
+</div>
+
+
+<div>
+  <span>Research leadership</span>
+</div>
+
+
+<div>
+  <span>Data & Analytics</span>
+</div>
+
+
+<div>
+  <span>Researchers</span>
+</div>
+
+
+<div>
+  <span>Librarians</span>
+</div>
 
 </div>
 
-<div className='w-full cursor-pointer   md:flex justify-between mt-5'>
 
 
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Research leadership</p>
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Data & Analytics</p>
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Researchers</p>
-<p className='hover:text-blue-900 hover:underline duration-300 ease-in-out'>Librarians</p>
+
+
+
+
+
 
 </div>
+
+
+
+
 
 
 
@@ -213,12 +294,119 @@ function Product() {
 
 
 
-{/* Discover more about Section */}
+{/* Discover more about Section start */}
 
 
-<h1 className='text-2xl md:text-4xl'>Featured topics and communities</h1>
 
-<p>working...</p>
+<div className='flex flex-col p-5'>
+
+<div className='pt-20'>
+  <h1 className='text-4xl'>Discover more about Elsevier</h1>
+</div>
+
+
+
+<div className=' w-full   p-10'>
+<Slider {...setting}>
+<div className=' p-3'>
+          
+<div className="card">
+  <div className='flex w-full'>
+    <img className='rounded-lg' src="https://images.ctfassets.net/zlnfaxb2lcqx/OQkRodp4jhhjblyEZlnL1/fcc0c4ea677ea03718e3eb3404e67748/Joslyn-and-Samantha-Kyrsten-Ashlay-Photography.jpg?fm=webp&w=384&q=75" alt="" />
+  </div>
+<h1 className='text-sm my-5'>Connect</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+</h1>
+
+  <div>
+
+  </div>
+</div>
+
+          </div>
+          <div className=' p-3'>
+          
+<div className="card">
+  <div className='flex w-full'>
+    <img className='rounded-lg' src="https://images.ctfassets.net/zlnfaxb2lcqx/3YEU85rmv5tIKvVIZ8z5RY/adcb6b6e46fd7eabbb3090f25af5b112/Comparably-Awards-collage-2022_1.jpg?fm=webp&w=384&q=75" alt="" />
+  </div>
+<h1 className='text-sm my-5'>Connect</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+</h1>
+
+  <div>
+
+  </div>
+</div>
+
+          </div>
+          
+          
+          <div className=' p-3'>
+          
+          <div className="card">
+            <div className='flex w-full'>
+              <img className='rounded-lg' src="https://images.ctfassets.net/zlnfaxb2lcqx/1V441C8FQ7euheYgUPhk91/7ffacc65c276cdce4bfcb14e03b49846/Kumsal-townhall-NYC.jpg?fm=webp&w=384&q=75" alt="" />
+            </div>
+          <h1 className='text-sm my-5'>Connect</h1>
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+          </h1>
+          
+            <div>
+          
+            </div>
+          </div>
+          
+                    </div>
+                    
+                    <div className=' p-3'>
+          
+<div className="card">
+  <div className='flex w-full'>
+    <img className='rounded-lg' src="https://images.ctfassets.net/zlnfaxb2lcqx/12EM8nao55GCCh0lFlL4zi/059fe9e3aec6828c2ed514cbb4606586/Comparably-Awards-2023-q1-banner.jpg?fm=webp&w=384&q=75" alt="" />
+  </div>
+<h1 className='text-sm my-5'>Connect</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+</h1>
+
+  <div>
+
+  </div>
+</div>
+
+          </div>
+
+       <div className=' p-3'>
+          
+<div className="card">
+  <div className='flex w-full'>
+    <img className='rounded-lg' src="https://images.ctfassets.net/zlnfaxb2lcqx/2L7WPIkIIdVjRsE0jR7LR0/b7a33aeb7c24693f96c4993940f1cb52/Erin-Hill-Parks-banner__1_.jpg?fm=webp&w=384&q=75" alt="" />
+  </div>
+<h1 className='text-sm my-5'>Connect</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat 
+</h1>
+
+  <div>
+
+  </div>
+</div>
+
+          </div>
+          
+          
+
+</Slider>
+
+
+</div>
+
+
+</div>
 
 
 
