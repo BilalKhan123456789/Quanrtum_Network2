@@ -6,7 +6,7 @@ function Footer() {
     <footer class="text-white body-font bg-black">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
    
-    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left  order-first">
     
       <div class="lg:w-[33%] md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium text-[#f36f21] tracking-widest text-lg mb-3">Useful links</h2>

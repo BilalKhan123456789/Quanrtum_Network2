@@ -50,7 +50,7 @@ function Product() {
   return (
     <>
 
-<div className='md:py-14    px-5'>
+<div className='md:py-14    md:px-5 sm:p-3 p-2'>
 
     <h1 className='md:text-3xl text-lg'>Products and services for informed decisions</h1>
 
@@ -104,9 +104,9 @@ function Product() {
 {/* Insights for better outcomes section */}
 <h1 className='md:text-3xl text-lg'>Insights for better outcomes</h1>
 
-<div className='w-full md:flex-row flex-col justify-between mt-5 flex'>
+<div className='overflow-hidden w-full lg:flex-row flex-col justify-between mt-5 gap-2 flex'>
 
-<div className='md:w-[64%] relative  w-full'>
+<div className='lg:w-[64%] relative  w-full'>
     <img className='rounded-2xl h-[75%] w-full ' src="https://images.ctfassets.net/zlnfaxb2lcqx/5l370SxS43iinuTTazwr2f/3228564b163c40cf86efacfc88b96f5c/Insights-HBCU-Nursing-Students.jpg?fm=webp&w=1920&q=75" alt="" />
 
 
@@ -132,17 +132,17 @@ function Product() {
 
 {/* images & Cards Div */}
 
-<div className='md:w-1/3 w-full '>
+<div className='lg:w-1/3 w-full '>
 
   <div class="container sm:mt-0 my-5   flex flex-wrap">
 
     <div class="flex flex-wrap -m-4">
 
 
-      <div class="p-4">
+      <div class="lg:p-4 p-2">
         <div class="flex rounded-lg items-center gap-2 flex-row ">
           <div class="sm:flex-shrink-0 h-32 w-44  object-contain sm:mr-5    inline-flex items-center justify-center   ">
-          <img src={doctor} className='rounded-xl sm:h-32 sm:w-44  h-16 w-22'  alt="" />
+          <img src={doctor} className='rounded-xl sm:h-32 sm:w-44  w-22'  alt="" />
           </div>
           <div class="">
             <h2 class="text-gray-600 sm:text-base  text-xs ">Connect</h2>
@@ -154,10 +154,10 @@ function Product() {
 
 
 
-      <div class="p-4">
+      <div class="lg:p-4 p-2">
         <div class="flex rounded-lg items-center gap-2 flex-row ">
           <div class="sm:flex-shrink-0 h-32 w-44  object-contain sm:mr-5    inline-flex items-center justify-center   ">
-          <img src={nursing} className='rounded-xl sm:h-32 sm:w-44  h-16 w-22'  alt="" />
+          <img src={nursing} className='rounded-xl sm:h-32 sm:w-44   w-22'  alt="" />
           </div>
           <div class="">
             <h2 class="text-gray-600 sm:text-base  text-xs ">Connect</h2>
@@ -168,10 +168,10 @@ function Product() {
       </div>
 
 
-      <div class="p-4">
+      <div class="lg:p-4 p-2">
         <div class="flex rounded-lg items-center gap-2 flex-row ">
           <div class="sm:flex-shrink-0 h-32 w-44  object-contain sm:mr-5    inline-flex items-center justify-center   ">
-          <img src={body} className='rounded-xl sm:h-32 sm:w-44  h-16 w-22'  alt="" />
+          <img src={body} className='rounded-xl sm:h-32 sm:w-44   w-22'  alt="" />
           </div>
           <div class="">
             <h2 class="text-gray-600 sm:text-base  text-xs ">Connect</h2>
@@ -298,7 +298,7 @@ function Product() {
 
 
 
-<div className='flex flex-col p-5'>
+<div className='flex w-full flex-col p-5'>
 
 <div className='pt-20'>
   <h1 className='text-4xl'>Discover more about Elsevier</h1>
@@ -306,7 +306,7 @@ function Product() {
 
 
 
-<div className=' w-full   p-10'>
+<div className=' w-full lg:p-10 md:p-5 sm:p-3 p-2'>
 <Slider {...setting}>
 <div className=' p-3'>
           
